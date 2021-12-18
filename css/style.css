@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+div h2{
+    text-align: center;
+    color: white;
+}
+h2{
+    margin-top: 0;
+    border: 1px solid black;
+    background: black;
+    margin-left: 70%;
+    font-family: 'Impact';
+    font-style: normal;
+}
+p{
+    color: rgb(17, 26, 15);
+    font-family: 'Century Gothic', cursive;
+    margin-left: 5px;
+}
+body{
+    background: url(bg.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row{
+    padding: 5px;
+    width: 95%;
+    margin: 20px auto;
+}
+header{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+.col{
+    flex: 1;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 0px;
+    background: rgb(6, 222, 238);
+}
+@media (max-width: 992px){
+    .columns .col{
+        margin-bottom: 5px;
+    }
+@media (min-width: 768px) and (max-width: 991px){
+    .columns .col{
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+}
+@media (max-width: 767px){
+    .columns .col{
+        flex-basis: 100%;
+    }
+}
+}
